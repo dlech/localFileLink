@@ -1,0 +1,3 @@
+content localFileLink chrome/content/
+overlay chrome://browser/content/browser.xul chrome://localFileLink/content/localFileLink.xul
+

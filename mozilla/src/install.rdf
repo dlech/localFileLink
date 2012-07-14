@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>localFileLink@d.lech</em:id>
+    <em:version>0.1.0</em:version>
+    <em:type>2</em:type>
+    <em:unpack>true</em:unpack>
+
+    <!-- Target Application this extension can install into, 
+         with minimum and maximum supported versions. -->
+         
+    <em:targetApplication>
+      <Description>
+        <!-- Firefox -->
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>4.0</em:minVersion>
+        <em:maxVersion>16.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <em:targetPlatform>WINNT</em:targetPlatform>
+
+    <!-- Front End MetaData -->
+    <em:name>Local File Link</em:name>
+    <em:description>Used in conjunction with tiki plugin for opening folder on local file system</em:description>
+    <em:creator>David Lechner</em:creator>
+   
+  </Description>
+</RDF>
