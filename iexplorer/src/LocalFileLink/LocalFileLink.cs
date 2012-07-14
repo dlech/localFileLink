@@ -6,13 +6,12 @@ using System.IO;
 using System.Diagnostics;
 
 
-namespace LocalFileLink
+namespace Lechnology.LocalFileLink
 {
 
-  [ProgId("LocalFileLink.ActiveX")]
-
+  [ProgId("LocalFileLink")]  
   [Guid("4EBA1E78-3660-4d56-9EAE-3554C36BDD7F")]
-  public class ActiveX : IObjectSafety
+  public class LocalFileLink : IObjectSafety
   {
     /// <summary>
     /// Opens windows explorer to the directory specified by the path.

@@ -1,4 +1,4 @@
-﻿using LocalFileLink;
+﻿using Lechnology.LocalFileLink;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Reflection;
@@ -10,11 +10,11 @@ namespace LocalFileLinkTestProject
 {
 
   /// <summary>
-  ///This is a test class for ActiveXTest and is intended
-  ///to contain all ActiveXTest Unit Tests
+  ///This is a test class for LocalFileLinkTest and is intended
+  ///to contain all LocalFileLinkTest Unit Tests
   ///</summary>
   [TestClass()]
-  public class ActiveXTest
+  public class LocalFileLinkTest
   {
     /// <summary>
     ///A test for OpenPath
@@ -40,7 +40,7 @@ namespace LocalFileLinkTestProject
       Assert.IsNull(ie, "Test directory '" + Path.GetDirectoryName(path) +
         "' is already open.\n" + "Please close it and run test again.");
 
-      ActiveX target = new ActiveX();
+      LocalFileLink target = new LocalFileLink();
       target.OpenPath(path);
       Thread.Sleep(1000); //give it a sec. to open
 

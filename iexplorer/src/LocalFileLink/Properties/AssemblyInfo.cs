@@ -9,9 +9,9 @@ using System.Resources;
 [assembly: AssemblyTitle("LocalFileLink")]
 [assembly: AssemblyDescription("Part of LocalFileLink plugin for Tiki")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Haynes Equipment Co.")]
+[assembly: AssemblyCompany("David Lechner")]
 [assembly: AssemblyProduct("LocalFileLink")]
-[assembly: AssemblyCopyright("Copyright © Haynes Equipment Co. 2011")]
+[assembly: AssemblyCopyright("Copyright © David Lechner 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

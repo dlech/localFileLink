@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "LocalFileLinkSetup", "LocalFileLinkSetup\LocalFileLinkSetup.vdproj", "{26AAB684-E34A-4022-A609-DA713A79404F}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = LocalFileLink.vsmdi
@@ -45,6 +47,13 @@ Global
 		{06A2FDBE-2844-4F3A-81BB-BDEC61B06261}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{06A2FDBE-2844-4F3A-81BB-BDEC61B06261}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{06A2FDBE-2844-4F3A-81BB-BDEC61B06261}.Release|x86.ActiveCfg = Release|Any CPU
+		{26AAB684-E34A-4022-A609-DA713A79404F}.Debug|Any CPU.ActiveCfg = Debug
+		{26AAB684-E34A-4022-A609-DA713A79404F}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{26AAB684-E34A-4022-A609-DA713A79404F}.Debug|x86.ActiveCfg = Debug
+		{26AAB684-E34A-4022-A609-DA713A79404F}.Release|Any CPU.ActiveCfg = Release
+		{26AAB684-E34A-4022-A609-DA713A79404F}.Release|Mixed Platforms.ActiveCfg = Release
+		{26AAB684-E34A-4022-A609-DA713A79404F}.Release|Mixed Platforms.Build.0 = Release
+		{26AAB684-E34A-4022-A609-DA713A79404F}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
