@@ -6,6 +6,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>localFileLink@d.lech</em:id>
     <em:version>0.1.0</em:version>
+    <em:bootstrap>true</em:bootstrap>
     <em:type>2</em:type>
     <em:unpack>true</em:unpack>
 
@@ -22,7 +23,7 @@
     </em:targetApplication>
 
     <em:targetPlatform>WINNT</em:targetPlatform>
-
+    
     <!-- Front End MetaData -->
     <em:name>Local File Link</em:name>
     <em:description>Used in conjunction with tiki plugin for opening folder on local file system</em:description>

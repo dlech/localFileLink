@@ -1,5 +1,3 @@
-
-
 var mozLocalFileLink = {
   
   onPageLoad: function (aEvent) {
@@ -88,10 +86,18 @@ var mozLocalFileLink = {
   }
 };
 
-document.addEventListener("localFileLinkOpenFileFolderEvent", function (aEvent) { 
-  mozLocalFileLink.openFileFolderEventHandler(aEvent);
-}, false, true);
+function startup(aData, aReason) {
+  document.addEventListener("localFileLinkOpenFileFolderEvent",
+    mozLocalFileLink.openFileFolderEventHandler(aEvent),
+    false, true);
+  document.addEventListener("localFileLinkQueryBrowserEvent",
+    mozLocalFileLink.queryBrowserEventHandler(aEvent),
+    false, true);
+}
 
-document.addEventListener("localFileLinkQueryBrowserEvent", function (aEvent) { 
-  mozLocalFileLink.queryBrowserEventHandler(aEvent);
-}, false, true);
+function shutdown(aData, aReason) {
+  document.removeEventListener("localFileLinkOpenFileFolderEvent",
+    mozLocalFileLink.openFileFolderEventHandler);
+  document.removeEventListener("localFileLinkQueryBrowserEvent",
+    mozLocalFileLink.queryBrowserEventHandler);
+}
