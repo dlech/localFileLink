@@ -52,7 +52,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>c:\Windows\Microsoft.NET\Framework64\v4.0.30319\RegAsm.exe "$(TargetPath)" /codebase /tlb</PostBuildEvent>
+    <PostBuildEvent>REM c:\Windows\Microsoft.NET\Framework64\v4.0.30319\RegAsm.exe "$(TargetPath)" /codebase /tlb</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
