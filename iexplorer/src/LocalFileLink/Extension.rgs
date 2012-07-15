@@ -1,0 +1,26 @@
+HKCR
+{
+	LocalFileLink.Extension.1 = s 'Extension Class'
+	{
+		CLSID = s '{643C8101-9BF6-4AAC-8584-3E926226A145}'
+	}
+	LocalFileLink.Extension = s 'Extension Class'
+	{		
+		CurVer = s 'LocalFileLink.Extension.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {643C8101-9BF6-4AAC-8584-3E926226A145} = s 'Extension Class'
+		{
+			ProgID = s 'LocalFileLink.Extension.1'
+			VersionIndependentProgID = s 'LocalFileLink.Extension'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{2E8BA3A6-39D6-4237-A7A1-BAE09087D72E}'
+			Version = s '1.0'
+		}
+	}
+}

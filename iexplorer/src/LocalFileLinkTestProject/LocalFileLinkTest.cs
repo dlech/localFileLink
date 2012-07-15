@@ -1,5 +1,4 @@
-﻿using Lechnology.LocalFileLink;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Reflection;
 using System.Diagnostics;
@@ -40,8 +39,8 @@ namespace LocalFileLinkTestProject
       Assert.IsNull(ie, "Test directory '" + Path.GetDirectoryName(path) +
         "' is already open.\n" + "Please close it and run test again.");
 
-      LocalFileLink target = new LocalFileLink();
-      target.OpenPath(path);
+      LocalFileLink.Extension target = new LocalFileLink.Extension();
+      target.OpenFileFolder(path);
       Thread.Sleep(1000); //give it a sec. to open
 
       ie = GetExplorerForPath(path);
