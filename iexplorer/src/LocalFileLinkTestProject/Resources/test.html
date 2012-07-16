@@ -1,0 +1,24 @@
+<script type="text/javascript">
+    try {
+        var LocalFileLink = new ActiveXObject("LocalFileLink.Extension");
+    } catch (ex) {
+        alert(ex);
+    }
+</script>
+<html>
+<head>
+    <title>LocalFileLink Test Page </title>
+</head>
+<body>
+    <a href="javascript:LocalFileLink.OpenFileFolder('C:\\')">link to C:\</a>
+    <br />
+    <a href="javascript:LocalFileLink.OpenFileFolder('C:\\file that does not exist.txt')">
+        link to C:\file that does not exist.txt</a>
+    <br />
+    <a href="javascript:LocalFileLink.OpenFileFolder('C:\\dir that does not exist\\')">
+        link to C:\dir that does not exist\</a>
+    <br />
+    <a href="javascript:LocalFileLink.OpenFileFolder('C:\\dir that does not exist\\file that does not exist.txt')">
+        link to C:\dir that does not exist\file that does not exist.txt</a>
+</body>
+</html>
