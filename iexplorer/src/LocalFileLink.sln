@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalFileLinkTestProject", "LocalFileLinkTestProject\LocalFileLinkTestProject.csproj", "{06A2FDBE-2844-4F3A-81BB-BDEC61B06261}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2858FB9D-A6B7-47DD-82D1-D949F810EE28} = {2858FB9D-A6B7-47DD-82D1-D949F810EE28}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C3A75FC8-9468-4F00-9CBE-6751F2C329A0}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		LocalFileLink.vsmdi = LocalFileLink.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "LocalFileLinkSetup", "LocalFileLinkSetup\LocalFileLinkSetup.vdproj", "{26AAB684-E34A-4022-A609-DA713A79404F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LocalFileLink", "LocalFileLink\LocalFileLink.vcxproj", "{2858FB9D-A6B7-47DD-82D1-D949F810EE28}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = LocalFileLink.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06A2FDBE-2844-4F3A-81BB-BDEC61B06261}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{06A2FDBE-2844-4F3A-81BB-BDEC61B06261}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{06A2FDBE-2844-4F3A-81BB-BDEC61B06261}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{06A2FDBE-2844-4F3A-81BB-BDEC61B06261}.Debug|Win32.ActiveCfg = Debug|x86
+		{06A2FDBE-2844-4F3A-81BB-BDEC61B06261}.Debug|x86.ActiveCfg = Debug|x86
+		{06A2FDBE-2844-4F3A-81BB-BDEC61B06261}.Debug|x86.Build.0 = Debug|x86
+		{06A2FDBE-2844-4F3A-81BB-BDEC61B06261}.Release|Any CPU.ActiveCfg = Release|x86
+		{06A2FDBE-2844-4F3A-81BB-BDEC61B06261}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{06A2FDBE-2844-4F3A-81BB-BDEC61B06261}.Release|Mixed Platforms.Build.0 = Release|x86
+		{06A2FDBE-2844-4F3A-81BB-BDEC61B06261}.Release|Win32.ActiveCfg = Release|x86
+		{06A2FDBE-2844-4F3A-81BB-BDEC61B06261}.Release|x86.ActiveCfg = Release|x86
+		{06A2FDBE-2844-4F3A-81BB-BDEC61B06261}.Release|x86.Build.0 = Release|x86
+		{26AAB684-E34A-4022-A609-DA713A79404F}.Debug|Any CPU.ActiveCfg = Debug
+		{26AAB684-E34A-4022-A609-DA713A79404F}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{26AAB684-E34A-4022-A609-DA713A79404F}.Debug|Win32.ActiveCfg = Debug
+		{26AAB684-E34A-4022-A609-DA713A79404F}.Debug|Win32.Build.0 = Debug
+		{26AAB684-E34A-4022-A609-DA713A79404F}.Debug|x86.ActiveCfg = Debug
+		{26AAB684-E34A-4022-A609-DA713A79404F}.Release|Any CPU.ActiveCfg = Release
+		{26AAB684-E34A-4022-A609-DA713A79404F}.Release|Mixed Platforms.ActiveCfg = Release
+		{26AAB684-E34A-4022-A609-DA713A79404F}.Release|Win32.ActiveCfg = Release
+		{26AAB684-E34A-4022-A609-DA713A79404F}.Release|Win32.Build.0 = Release
+		{26AAB684-E34A-4022-A609-DA713A79404F}.Release|x86.ActiveCfg = Release
+		{2858FB9D-A6B7-47DD-82D1-D949F810EE28}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{2858FB9D-A6B7-47DD-82D1-D949F810EE28}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{2858FB9D-A6B7-47DD-82D1-D949F810EE28}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{2858FB9D-A6B7-47DD-82D1-D949F810EE28}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2858FB9D-A6B7-47DD-82D1-D949F810EE28}.Debug|Win32.Build.0 = Debug|Win32
+		{2858FB9D-A6B7-47DD-82D1-D949F810EE28}.Debug|x86.ActiveCfg = Debug|Win32
+		{2858FB9D-A6B7-47DD-82D1-D949F810EE28}.Release|Any CPU.ActiveCfg = Release|Win32
+		{2858FB9D-A6B7-47DD-82D1-D949F810EE28}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{2858FB9D-A6B7-47DD-82D1-D949F810EE28}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{2858FB9D-A6B7-47DD-82D1-D949F810EE28}.Release|Win32.ActiveCfg = Release|Win32
+		{2858FB9D-A6B7-47DD-82D1-D949F810EE28}.Release|Win32.Build.0 = Release|Win32
+		{2858FB9D-A6B7-47DD-82D1-D949F810EE28}.Release|x86.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

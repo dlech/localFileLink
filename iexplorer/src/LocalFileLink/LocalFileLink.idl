@@ -1,0 +1,35 @@
+// LocalFileLink.idl : IDL source for LocalFileLink
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (LocalFileLink.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(771EC9D1-1A07-4605-BA73-0FA741A7CBE1),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IExtension : IDispatch{
+    [id(1)] HRESULT OpenFileFolder([in] BSTR path);
+};
+[
+	uuid(2E8BA3A6-39D6-4237-A7A1-BAE09087D72E),
+	version(1.0),
+]
+library LocalFileLink
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(643C8101-9BF6-4AAC-8584-3E926226A145)		
+	]
+	coclass Extension
+	{
+		[default] interface IExtension;
+	};
+};
+
