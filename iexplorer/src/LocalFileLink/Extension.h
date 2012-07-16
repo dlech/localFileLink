@@ -19,35 +19,39 @@ using namespace ATL;
 // CExtension
 
 class ATL_NO_VTABLE CExtension :
-	public CComObjectRootEx<CComSingleThreadModel>,
-	public CComCoClass<CExtension, &CLSID_Extension>,
-	public IDispatchImpl<IExtension, &IID_IExtension, &LIBID_LocalFileLink, /*wMajor =*/ 1, /*wMinor =*/ 0>
+    public CComObjectRootEx<CComSingleThreadModel>,
+    public CComCoClass<CExtension, &CLSID_Extension>,
+    public IDispatchImpl<IExtension, &IID_IExtension, &LIBID_LocalFileLink,
+        /*wMajor =*/ 1, /*wMinor =*/ 0>,
+    public IObjectSafetyImpl<CExtension, INTERFACESAFE_FOR_UNTRUSTED_CALLER|
+         INTERFACESAFE_FOR_UNTRUSTED_DATA>
 {
 public:
-	CExtension()
-	{
-	}
+    CExtension()
+    {
+    }
 
 DECLARE_REGISTRY_RESOURCEID(IDR_EXTENSION)
 
 
 BEGIN_COM_MAP(CExtension)
-	COM_INTERFACE_ENTRY(IExtension)
-	COM_INTERFACE_ENTRY(IDispatch)
+    COM_INTERFACE_ENTRY(IExtension)
+    COM_INTERFACE_ENTRY(IDispatch)
+    COM_INTERFACE_ENTRY(IObjectSafety)
 END_COM_MAP()
 
 
 
-	DECLARE_PROTECT_FINAL_CONSTRUCT()
+    DECLARE_PROTECT_FINAL_CONSTRUCT()
 
-	HRESULT FinalConstruct()
-	{
-		return S_OK;
-	}
+    HRESULT FinalConstruct()
+    {
+        return S_OK;
+    }
 
-	void FinalRelease()
-	{
-	}
+    void FinalRelease()
+    {
+    }
 
 public:
 

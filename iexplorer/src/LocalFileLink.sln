@@ -51,7 +51,6 @@ Global
 		{26AAB684-E34A-4022-A609-DA713A79404F}.Debug|x86.ActiveCfg = Debug
 		{26AAB684-E34A-4022-A609-DA713A79404F}.Release|Any CPU.ActiveCfg = Release
 		{26AAB684-E34A-4022-A609-DA713A79404F}.Release|Mixed Platforms.ActiveCfg = Release
-		{26AAB684-E34A-4022-A609-DA713A79404F}.Release|Mixed Platforms.Build.0 = Release
 		{26AAB684-E34A-4022-A609-DA713A79404F}.Release|Win32.ActiveCfg = Release
 		{26AAB684-E34A-4022-A609-DA713A79404F}.Release|Win32.Build.0 = Release
 		{26AAB684-E34A-4022-A609-DA713A79404F}.Release|x86.ActiveCfg = Release
